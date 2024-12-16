@@ -1,0 +1,27 @@
+ALGORITHM algorithm_name
+VAR
+   longueur = 0;
+   mots = 1;
+   voyelles = 0;
+   précédent " "
+   afficher("entrez une phase terminé par un point")
+   répéter
+   lire(caractéres)
+BEGIN
+   longeur:= longeur + 1;
+   SI 
+   caractéres = "a" OU caractéres = "é" OU caractéres = "i" OU 
+   caractéres = "o" OU caractéres = "u" OU caractéres = "y"
+    ALORS
+   voyelles:= voyelles + 1;
+END SI
+ SI précédent = " " ET caractéres = " " ALORS
+ mots:=  mots + 1;
+ FINSI
+ précédent = caractéres
+ //affiche le resultats 
+ Afficher { "longueur de la phrase | " ,longueur};
+ Afficher{"nombre de mots | " , mots};
+ Afficher{"nombre de voyelles | " , voyelles};
+ END
+
